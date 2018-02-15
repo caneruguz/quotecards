@@ -1,0 +1,180 @@
+/* 
+
+Provides additional CSS unique to this design.
+
+*/
+
+body {
+	padding-top: 20px;
+	background-position: 0 0;
+}
+#tool {
+	padding-top: 10px;
+}
+
+#saveimg {
+
+}
+ 
+#thebox {
+	background-color: #fff;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: 0 0 10px 0 #999;
+	-moz-box-shadow: 0 0 10px 0 #999;
+	box-shadow: 0 0 10px 0 #999;
+	border: none;
+	padding: 20px;
+	color: #222222;
+	line-height: 34px;
+	width: 600px;
+	height: 440px;
+	margin: 20px auto;
+	text-align: center;
+	vertical-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+#textbox {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.bgImg{
+	width: 6px;
+	height: 16px;
+}
+
+#bg-1 {	background: transparent url(art/p1.jpg) center; }
+#bg-2 {	background: transparent url(art/p2.jpg) center; }
+#bg-3 {	background: transparent url(art/p3.jpg) center; }
+#bg-4 {	background: transparent url(art/bg8.jpg) center; }
+#bg-5 {	background: transparent url(art/bg13.jpg) center; }
+#bg-6 {	background: transparent url(art/bg17.jpg) center; }
+#bg-7 {	background: transparent url(art/bg19.jpg) center; }
+#bg-8 {	background: transparent url(art/sp1.png) center; }
+#bg-9 {	background: transparent url(art/sp2.jpg) center; }
+#bg-w {	background-image: none; }
+
+
+#f1 {font-family: 'Open Sans', sans-serif; }
+#f2 {font-family: 'Lora', serif;		   }
+#f3 {font-family: 'PT Sans', sans-serif;   }
+#f4 {font-family: 'Marck Script', cursive; }
+#f5 {font-family: 'Just Me Again Down Here', cursive; }
+#f6 {font-family: 'Droid Serif', serif;	   }
+#f7 {font-family: 'Coming Soon', cursive;  }
+#f8 {font-family: 'Raleway', cursive;	   }
+#f9 {font-family: 'Rock Salt', cursive;	   }
+#f10 {font-family: 'Pacifico', cursive;	   }
+#f11 {font-family: 'Helvetica', sans-serif;	   }
+#f12 {font-family: 'Arial', sans-serif;	   }
+#f13 {font-family: 'Times New Roman', serif;	   }
+#f14 {font-family: 'Courier', sans-serif;	   }
+
+#fonts {
+	font-family: none;
+}
+.input-mini {
+	width: 30px;
+}
+
+textarea{resize: none}
+
+#ajax-loader {
+	display:none;
+	width: 300px;
+	height: 220px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 50px 0 #222;
+	-moz-box-shadow: 0 0 50px 0 #222;
+	box-shadow: 0 0 50px 0 #222;
+	position: absolute;
+	top: 100px;
+	left: 40%;
+	background: #fff url(ajax-loader.gif) no-repeat center; 
+	padding-top: 80px;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+}
+
+#darken {
+	width: 100%;
+	height: 1000px;
+	z-index: 99;
+	background-color: #000;
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+}
+
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+.red {
+	color: red;
+	font-size: 15px;
+}
+
+#text-color {
+	background: #FFF; 
+}
+
+#background-color {
+	background: #fff;
+} 
+
+
+#showcase {
+	text-align: center;
+	margin: 0 auto;
+}
+#showcase li {
+	display: inline; 
+}
+
+#closeit {
+	float: right;
+}
+.toolbox {
+	width: 160px; 
+	float: left;
+		-webkit-box-shadow: 0 0 10px 0 #999;
+	-moz-box-shadow: 0 0 10px 0 #999;
+	box-shadow: 0 0 10px 0 #999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.ui-slider-handle {
+	background: url(slider-button.png) center no-repeat !important;
+	width: 26px;
+	height: 26px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: -4px;	
+}
+.ui-widget {
+	height: 6px;
+}
+
+.ui-widget-header {
+	background: url(fill.png) no-repeat left center;
+}
+
+#line-height, #font-size {
+	background: transparent;
+	border: none;
+}
