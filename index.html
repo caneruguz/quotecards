@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quote Cards</title>
+  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/vue-swatches/dist/vue-swatches.min.css">
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+  <div id="quotecards" class="row">
+    <div class="col-xs-12 col-sm-4">
+        <div id="sidebar" class="box">
+          <h1> Quote Cards </h1>
+          <p class="lead"> Build beautiful cards for insightful words </p>
+            <div class="form-container">
+              <form>
+                <!-- Quote -->
+                <div class="form-group">
+                  <label for="quote">Quote Text</label>
+                  <textarea class="quote-input" id="quote">{{quote}}</textarea>
+                </div>
+                <!-- Line height -->
+                <div class="form-group">
+                  <label for="line-height">Line Height</label>
+                  <input type="number" class="number-input" id="line-height" v-model="lineHeight">
+                </div>
+                <!-- Padding -->
+                <div class="form-group">
+                  <label for="padding">Padding</label>
+                  <input type="number" class="number-input" id="padding" v-model="padding">
+                </div>
+                <!-- Text Color -->
+                <div class="form-group">
+                  <label for="padding">Text Color</label>
+                  <swatches v-model="color" colors="text-advanced" popover-to="left"></swatches>
+                </div>
+
+                <!-- Background Color -->
+                <div class="form-group">
+                  <label for="padding">Background Color</label>
+                  <swatches v-model="bgColor" colors="text-advanced" popover-to="left"></swatches>
+                </div>
+                <!-- Width -->
+                <div class="form-group">
+                  <label for="box-width">Box Width</label>
+                  <input type="number" class="number-input" id="box-width" v-model="boxWidth">
+                </div>
+                <!-- Height -->
+                <div class="form-group">
+                  <label for="box-height">Box Height</label>
+                  <input type="number" class="number-input" id="box-height" v-model="boxHeight">
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <div id="preview" class="box">
+          <h1> Preview </h1>
+          <div class="preview-box"
+              v-bind:style="{
+                height: boxHeight + 'px',
+                width: boxWidth + 'px',
+                padding: padding + 'px',
+                lineHeight: lineHeight + 'px',
+                backgroundColor: bgColor,
+                color: color
+              }"
+
+              > {{quote}} </div>
+      </div>
+    </div>
+</div>
+<script src="https://unpkg.com/vue-swatches"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
